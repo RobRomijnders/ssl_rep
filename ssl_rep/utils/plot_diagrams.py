@@ -46,7 +46,7 @@ plt.legend()
 if not do_save:
     plt.show()
 else:
-    plt.savefig('../im/two_points_query.svg')
+    plt.savefig('../im/two_points_query.png')
 
 
 # // Image of two points with decision boundary, with query
@@ -67,7 +67,7 @@ plt.legend()
 if not do_save:
     plt.show()
 else:
-    plt.savefig('../im/two_points_query_boundary.svg')
+    plt.savefig('../im/two_points_query_boundary.png')
 
 
 # // Image of two points, with 10000 unlabeled points.
@@ -88,7 +88,7 @@ plt.legend()
 if not do_save:
     plt.show()
 else:
-    plt.savefig('../im/two_points_query_unlabeled.svg')
+    plt.savefig('../im/two_points_query_unlabeled.png')
 
 
 # // Image of two points, with 10000 unlabeled points, with decision boundary.
@@ -113,4 +113,4 @@ plt.legend()
 if not do_save:
     plt.show()
 else:
-    plt.savefig('../im/two_points_query_unlabeled_boundary.svg')
+    plt.savefig('../im/two_points_query_unlabeled_boundary.png')

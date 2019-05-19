@@ -18,18 +18,26 @@ More formally, by learning representions, semisupervised learning factorizes the
 Ok, let's do another example with diagrams. We are faced with the following data set: {( , ), ( , )}. The data set has a rather small number of samples. However, based on these samples, what would you think of the decision boundary? Someone queries a point at ( , ), what label would we give it?
 
 // Image of two points, with query
+![two_points](https://github.com/RobRomijnders/ssl_rep/blob/master/ssl_rep/im/two_points_query.svg?raw=true)
+
 
 // Image of two points with decision boundary, with query
+![two_points_boundary](https://github.com/RobRomijnders/ssl_rep/blob/master/ssl_rep/im/two_points_query_boundary.svg?raw=true)
+
 
 Given such data set, we would assign the bisector as the decision boundary. And we would label the point to be class XXX
 
-Now comes step two in our example: Someone walks in and gives us a huge addition to our data set. We receive 10000 new data points. However, they carry no label. We have 10000 new unlabeled samples. How can these samples help us? Well, let's plot them:
+Now comes step two in our example: Someone walks in and gives us a huge addition to our data set. We receive 1000 new data points. However, they carry no label. We have 1000 new unlabeled samples. How can these samples help us? Well, let's plot them:
 
-// Image of two points, with 10000 unlabeled points. 
+// Image of two points, with 1000 unlabeled points. 
+![two_points_unlabeled](https://github.com/RobRomijnders/ssl_rep/blob/master/ssl_rep/im/two_points_query_unlabeled.svg?raw=true)
+
 
 Suddenly, we discover some underlying structure to the data distributioin. Apparently, the data gets sampled from two half moons. One of the half moons carries a sample with label 1. Another half moon carries a sample with label 0. Now we think back to our decision boundary. This time around, what decision boundary would we assign? Also think back to our query point. What label would we assign it using our new knowledge?
 
-// Image of two points, with 10000 unlabeled points, with decision boundary.
+// Image of two points, with 1000 unlabeled points, with decision boundary.
+![two_points_unlabeled_boundary](https://github.com/RobRomijnders/ssl_rep/blob/master/ssl_rep/im/two_points_query_unlabeled_boundary.svg?raw=true)
+
 
 Given these unlabeled samples, we would assign this decision boundary. And we give our query point the label XXX.
 
